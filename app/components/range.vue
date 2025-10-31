@@ -2,6 +2,18 @@
     <div class="text-center my-10 md:my-16">
          <h2 class="capitalize text-xl md:text-4xl font-bold">Browse the range</h2>
          <p class="text-sm md:text-base mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    </div>
+    <div class="flex justify-center items-center gap-6 text-center">
+        <div v-for=" items in range"
+:key="items.label"
+
+>
+<div class="">
+    <img :src=items.img  :alt=items.label class="w-80 h-80 rounded-2xl mb-4">
+<span class="font-bold"> {{ items.label }}</span>
+</div>
+</div>
     </div>
 
 </template>
