@@ -4,6 +4,7 @@
 
     <div class="max-w-7xl mx-auto">
         <Range/>
+        <home-products/>
     </div>
     </div>
 </template>
