@@ -48,7 +48,7 @@ const products = [
     price: "2.500.000",
     oldPrice: "3.500.000",
     // discount: 30,
-    img: img1
+    img: img5
   },
     {
     title: "Syltherine",
@@ -80,7 +80,7 @@ const products = [
     price: "# 2.500.000",
     oldPrice: "#3.500.000",
     tag: "new",
-    img: img5
+    img: img8
   },
    {
     title: "Syltherine",

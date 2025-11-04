@@ -7,8 +7,6 @@
         :alt="product.title"
         class="w-full h-64 object-cover"
       />
-
-
       <div
         v-if="product.discount"
         class="absolute top-3 right-3 bg-red-500 text-white text-xs px-1 py-2 rounded-full z-20 font-semibold w-8 h-8"
@@ -23,7 +21,7 @@
         {{ product.tag }}
       </div>
 <div class="bg-gray-100">
-          <div class="py-4 px-4 ">
+     <div class="py-4 px-4">
       <h3 class="text-gray-800 font-semibold">{{ product.title }}</h3>
       <p class="text-sm text-gray-500 my-4">{{ product.description }}</p>
       <div class="flex justify-between gap-2 mt-2">
@@ -43,7 +41,7 @@
         style="background-color: rgba(0, 0, 0, 0.6);"
       >
         <p
-          class="inline-block text-yellow-600 bg-white px-6 py-2 rounded-md transition-colors duration-200 mb-4"
+          class="inline-block text-yellow-600 bg-white px-6 py-2 rounded-md transition-colors duration-200 mb-4 cursor-pointer"
         >
           Add to cart
 </p>
