@@ -10,14 +10,14 @@
     >
     <div class="mt-10 mx-10">
 <p class="text-[8px] md:text-xs  uppercase tracking-wider font-semibold mb-4" >New Arrival</p>
-      <h3 class="text-sm md:text-6xl font-bold text-[#B88E2F]">
+      <h3 class="text-sm md:text-6xl font-bold text-[#B88E2F] mb-2">
         Discover Our New Collection
       </h3>
-      <p class=" text-[10px] md:text-sm md:mt-2">
+      <p class=" text-[10px] md:text-sm ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
       </p>
       <p
-        class="bg-[#B88E2F] text-white px-2  py-1  md:px-6 md:py-2 inline-block rounded- transition-colors duration-200 font-semibold mt-2  md:mt-6 mb-2 md:mb-0"
+        class="bg-[#B88E2F] text-white px-2  py-1  md:px-6 md:py-2 inline-block rounded- transition-colors duration-200 font-semibold mt-2  md:mt-6 mb-2"
       >
         Buy Now
     </p>
