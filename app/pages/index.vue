@@ -10,6 +10,9 @@
     <div class="mt-10 md:mt-16">
         <HomeRoomInspiration/>
     </div>
+    <div class="max-w-7xl mx-auto">
+        <HomeSetup/>
+    </div>
     </div>
 </template>
 
