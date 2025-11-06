@@ -4,7 +4,7 @@
          <p class="text-sm md:text-base mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
     </div>
-    <div class="flex justify-center items-center gap-6 text-center">
+    <div class="grid md:flex justify-center items-center gap-6 text-center">
         <div v-for=" items in range"
 :key="items.label"
 
