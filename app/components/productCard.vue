@@ -34,8 +34,6 @@
       </div>
     </div>
 </div>
-
-
       <div
         class="overlay absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-300"
         style="background-color: rgba(0, 0, 0, 0.6);"
@@ -52,14 +50,10 @@
         </div>
       </div>
     </div>
-
-
-
   </div>
 </template>
 
 <script setup>
-
 import { Heart, Share2, ArrowLeftRight } from 'lucide-vue-next';
 defineProps({
   product: {
