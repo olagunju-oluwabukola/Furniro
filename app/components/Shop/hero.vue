@@ -2,8 +2,6 @@
 import heroOverlay from '../heroOverlay.vue';
 import img from "~/assets/images/herobg.png"
 </script>
-
-
 <template>
     <heroOverlay
     :image=img
@@ -11,7 +9,6 @@ import img from "~/assets/images/herobg.png"
     :breadcrumbs="[
         {label:'Home', link:'/'},
         {label:'shop'}
-
     ]"
     />
 

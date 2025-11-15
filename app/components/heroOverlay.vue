@@ -10,7 +10,7 @@
                 <template v-for="(crumb, index) in breadcrumbs" :key="index">
                     <a :href="crumb.link"
                      v-if="crumb.link"
-                     class="" > {{ crumb.label }}</a>
+                     class="hover:text-underline" > {{ crumb.label }}</a>
 
                      <span v-else="">{{ crumb.label }}</span>
 
