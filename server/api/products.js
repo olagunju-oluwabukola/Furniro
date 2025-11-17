@@ -1,3 +1,5 @@
+import Slug from "../../app/pages/shop/[slug].vue"
+
 export default defineEventHandler(() => {
   return [
     {
@@ -6,7 +8,8 @@ export default defineEventHandler(() => {
       price: "2.500.000",
       oldPrice: "3.500.000",
       discount: 30,
-      img: "/images/img1.png"
+      img: "/images/img1.png",
+      Slug:"Syltherine"
     },
     {
       title: "Syltherine",

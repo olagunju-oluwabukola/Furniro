@@ -27,7 +27,7 @@ const toggleLayout = (val) => {
   <section class="bg-[#FFF3E3]">
     <div class="flex justify-between items-center max-w-7xl mx-auto py-5">
 
-      <div class="flex items-center gap-6">
+      <div class="hidden md:flex items-center gap-6">
         <div class="flex items-center gap-2 font-semibold cursor-pointer">
           <SlidersHorizontal class="w-4 h-4"/> Filter
         </div>
@@ -36,7 +36,7 @@ const toggleLayout = (val) => {
         <div class="border h-8 font-thin"></div>
         <div class="font-thin">showing {{ showCount }} of {{ productsCount }}</div>
       </div>
-      <div class="flex items-center gap-6">
+      <div class="flex items-center gap-6 px-10 md:px-0">
         <div>
           <span class="mr-2 font-semibold">show</span>
           <input
@@ -49,7 +49,7 @@ const toggleLayout = (val) => {
           >
         </div>
 
-        <div class="text-sm">
+        <div class=" text-sm">
           <span class="mr-2 font-semibold">sort by</span>
           <select
             :value="sortBy"

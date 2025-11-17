@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-full h-[50vh] flex items-center justify-center text-white">
+    <div class="relative w-full h-[30vh] md:h-[50vh] flex items-center justify-center text-white">
         <div class="absolute inset-0 bg-cover bg-center"
         :style="{backgroundImage:` url(${image})`}"></div>
         <div class="absolute inset-0 bg-black/50"></div>

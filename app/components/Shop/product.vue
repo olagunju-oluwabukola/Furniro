@@ -46,6 +46,8 @@ const handleLike = (product) => alert(`Liked ${product.title}`)
     <div v-else-if="error" class="text-center py-10 text-red-500">Failed to load products.</div>
 
     <div v-else :class="layout === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6' : 'flex flex-col gap-4'">
+      <NuxtLink :to="`/shop/${product.slug}`">
+    <div class="group cursor-pointer">
       <ProductCard
         v-for="(product, index) in displayedProducts"
         :key="index"
@@ -55,6 +57,8 @@ const handleLike = (product) => alert(`Liked ${product.title}`)
         @compare="handleCompare"
         @like="handleLike"
       />
+      </div>
+      <NuxtLink/>
     </div>
 
     <div class="flex justify-center mt-10" v-if="showCount < productsCount">

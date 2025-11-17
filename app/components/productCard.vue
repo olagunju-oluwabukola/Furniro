@@ -7,7 +7,7 @@
         -{{ product.discount }}%
       </div>
 
-      <div v-if="product.tag" class="absolute top-12 right-3 bg-green-500 capitalize font-semibold text-white text-xs px-1 py-2 w-8 h-8 rounded-full z-20">
+      <div v-if="product.tag" class="absolute top-2 right-3 bg-green-500 capitalize font-semibold text-white text-xs px-1 py-2 w-8 h-8 rounded-full z-20">
         {{ product.tag }}
       </div>
 
@@ -28,9 +28,9 @@
            style="background-color: rgba(0,0,0,0.6);">
         <p @click="$emit('add-to-cart', product)" class="inline-block text-yellow-600 bg-white px-6 py-2 rounded-md transition-colors duration-200 mb-4 cursor-pointer">Add to cart</p>
         <div class="flex gap-4 text-white text-sm">
-          <span @click="$emit('share', product)" class="cursor-pointer hover:underline flex justify-center items-center gap-1">Share</span>
-          <span @click="$emit('compare', product)" class="cursor-pointer hover:underline flex justify-center items-center gap-1">Compare</span>
-          <span @click="$emit('like', product)" class="cursor-pointer hover:underline flex justify-center items-center gap-1">Like</span>
+          <span @click="$emit('share', product)" class="cursor-pointer hover:underline flex justify-center items-center gap-1"> <Share2/>  Share </span>
+          <span @click="$emit('compare', product)" class="cursor-pointer hover:underline flex justify-center items-center gap-1"> <ArrowRightLeft/>Compare</span>
+          <span @click="$emit('like', product)" class="cursor-pointer hover:underline flex justify-center items-center gap-1"> <Heart/> Like</span>
         </div>
       </div>
     </div>
@@ -38,6 +38,7 @@
 </template>
 
 <script setup>
+import { ArrowRightLeft, Share2,Heart } from 'lucide-vue-next';
 defineProps({
   product: { type: Object, required: true }
 })
