@@ -1,6 +1,5 @@
 
-export default defineEventHandler(() => {
-  return [
+  export default[
     {
       title: "Syltherine",
       description: "Stylish cafe chair",
@@ -138,4 +137,4 @@ export default defineEventHandler(() => {
        slug:"syltherine-16"
     },
   ]
-})
+

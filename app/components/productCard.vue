@@ -1,4 +1,8 @@
 <template>
+    <NuxtLink
+    :to="`/shop/${product.slug}`"
+    class="block group"
+  >
   <div class="relative overflow-hidden rounded-lg shadow-sm bg-white hover:shadow-lg transition-shadow duration-300">
     <div class="relative product-card">
       <img :src="product.img" :alt="product.title" class="w-full h-64 object-cover" />
@@ -35,6 +39,7 @@
       </div>
     </div>
   </div>
+    </NuxtLink>
 </template>
 
 <script setup>
