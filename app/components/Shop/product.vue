@@ -1,15 +1,14 @@
 <script setup>
 import { ref, computed } from 'vue'
 import Actions from './divider.vue'
+
 const { data: products, pending, error } = await useFetch('/api/products')
 
 const showCount = ref(8)
 const sortBy = ref('default')
 const layout = ref('grid')
 
-const productsCount = computed(() => {
-  return products.value?.length || 0
-})
+const productsCount = computed(() => products.value?.length || 0)
 
 const displayedProducts = computed(() => {
   if (!products.value) return []
@@ -21,15 +20,36 @@ const displayedProducts = computed(() => {
   } else if (sortBy.value === 'price-desc') {
     result.sort((a, b) => parseInt(b.price.replace(/\D/g, '')) - parseInt(a.price.replace(/\D/g, '')))
   }
+
   return result.slice(0, showCount.value)
 })
 
-const handleAddToCart = (product) => alert(`Added ${product.title} to cart`)
-const handleShare = (product) => alert(`Share ${product.title}`)
-const handleCompare = (product) => alert(`Compare ${product.title}`)
-const handleLike = (product) => alert(`Liked ${product.title}`)
+const handleAddToCart = (product) => console.log(`Added ${product.title} to cart`)
 
+const handleShare = async (product) => {
+  const url = `${window.location.origin}/shop/${product.slug}`
+  try {
+    await navigator.clipboard.writeText(url)
+    alert(`Product link copied!\n${url}`)
+  } catch (err) {
+    alert("Failed to copy link")
+  }
+}
+
+const compareList = ref([])
+
+const handleCompare = (product) => {
+  if (!compareList.value.find(p => p.slug === product.slug)) {
+    compareList.value.push(product)
+    console.log(`${product.title} added to compare list`)
+  } else {
+    console.log(`${product.title} is already in compare list`)
+  }
+}
+
+const handleLike  = (product) => console.log(`Liked ${product.title}`)
 </script>
+
 
 <template>
   <Actions
