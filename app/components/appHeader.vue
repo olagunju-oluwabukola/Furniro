@@ -1,7 +1,7 @@
 <template>
    <nav class="w-full bg-white shadow-sm py-5 sticky top-0 z-50">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-8">
-<NuxtLink>
+<NuxtLink to="/">
  <div class="flex items-center gap-2">
       <img :src="logo" alt="logo" class="h-8 w-8 object-contain" />
       <h3 class="font-bold text-xl text-gray-800 tracking-wide">Furniro</h3>
@@ -79,7 +79,7 @@ const cartStore = useCartStore()
 const navItems = [
   { title: "Home", to: '/' },
   { title: "Shop", to: '/shop' },
-  { title: "About", to: '/about' },
+  { title: "Blog", to: '/blog' },
   { title: "Contact", to: '/contact' },
 ]
 
@@ -98,7 +98,7 @@ const navIcons = [
 const mobileNav = [
   { title: "Home", to: "/", icon: HomeIcon },
   { title: "Shop", to: "/shop", icon: ShoppingBagIcon },
-  { title: "About", to: "/about", icon: InfoIcon },
+  { title: "Blog", to: "/blog", icon: InfoIcon },
   { title: "Profile", to: "/", icon: User2Icon },
   {
     title: "Cart",

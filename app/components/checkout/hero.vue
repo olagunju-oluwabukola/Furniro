@@ -5,7 +5,7 @@ import img from "~/assets/images/herobg.png"
 <template>
     <heroOverlay
     :image=img
-    title="shop"
+    title="Checkout"
     :breadcrumbs="[
         {label:'Home', link:'/'},
         {label:'Checkout'}

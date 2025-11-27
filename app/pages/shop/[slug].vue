@@ -199,14 +199,14 @@ const decrementQuantity = () => {
             </div>
 
             <div class="flex gap-4 mt-8">
-              <div class="flex items-center border border-gray-300 rounded-lg">
+              <div class="flex items-center border border-[#F9F1E7] rounded-lg">
                 <button
                   @click="decrementQuantity"
                   class="px-4 py-3 hover:bg-gray-50 transition"
                 >
                   -
                 </button>
-                <span class="px-6 py-3 border-x border-gray-300">{{ quantity }}</span>
+                <span class="px-6 py-3 border-x border-[#F9F1E7]">{{ quantity }}</span>
                 <button
                   @click="incrementQuantity"
                   class="px-4 py-3 hover:bg-gray-50 transition"
@@ -216,13 +216,13 @@ const decrementQuantity = () => {
               </div>
              <button
   @click="addToCart"
-  class="flex-1 bg-white border-2 border-gray-900 cursor-pointer"
+  class="flex-1 bg-white border-2 border-[#F9F1E7] rounded-xl cursor-pointer hover:bg-[#B88E2F] hover:border-0 hover:text-white"
 >
   Add To Cart
 </button>
 
               <button
-                class="px-6 py-3 border-2 border-gray-900 rounded-lg hover:bg-gray-50 transition cursor-pointer"
+                class="px-6 py-3 border-2 rounded-lg hover:transition cursor-pointer hidden md:block border-[#F9F1E7]  hover:bg-[#B88E2F] hover:border-0 hover:text-white"
               >
                 + Compare
               </button>

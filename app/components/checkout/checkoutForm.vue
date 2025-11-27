@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useCartStore } from '~/stores/cart'
-
+import { ArrowBigRight } from 'lucide-vue-next'
 const cartStore = useCartStore()
 
 const step = ref(1)
@@ -27,7 +27,7 @@ const totalPrice = computed(() => {
 
 const goToBilling = () => {
   if (!cartStore.items.length) {
-    alert('Your cart is empty')
+   console.log('Your cart is empty')
     return
   }
   step.value = 2
@@ -35,7 +35,7 @@ const goToBilling = () => {
 
 const placeOrder = () => {
   if (!form.value.firstName || !form.value.lastName || !form.value.address || !form.value.phone || !form.value.email) {
-    alert('Please fill all required fields')
+    console.log('Please fill all required fields')
     return
   }
   step.value = 3
@@ -100,25 +100,28 @@ const placeOrder = () => {
           </div>
 
           <p class="font-semibold text-[#B88E2F]">
-            Rs. {{ (item.price * item.quantity).toLocaleString('en-IN') }}
+            NGN{{ (item.price * item.quantity).toLocaleString('en-IN') }}
           </p>
         </div>
 
         <div class="flex justify-between items-center font-semibold text-xl pt-4">
           <span>Total</span>
           <span class="text-[#B88E2F]">
-            Rs. {{ totalPrice.toLocaleString('en-IN') }}
+            NGN {{ totalPrice.toLocaleString('en-IN') }}
           </span>
         </div>
 
-        <button
+     <button
           @click="goToBilling"
-          class="w-full bg-[#B88E2F] text-white py-3 rounded-lg font-medium hover:bg-[#A3731F] transition"
+          class="w-full bg-[#B88E2F] text-white py-3 rounded-lg font-medium hover:bg-[#A3731F] transition flex gap-2 justify-center"
         >
-          Continue to Billing →
+          Continue to Billing  <p><arrow-big-right/></p>
         </button>
+
+</div>
+
       </div>
-    </div>
+
 
 
     <!-- STEP 2: BILLING FORM -->
