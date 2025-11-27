@@ -1,1 +1,6 @@
-<template>Shop</template>
+<template>
+    <ShopHero/>
+            <ShopProduct/>
+            <ShopBanner/>
+
+</template>

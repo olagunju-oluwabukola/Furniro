@@ -10,7 +10,7 @@
     >
     <div class="mt-10 mx-10">
 <p class="text-[8px] md:text-xs  uppercase tracking-wider font-semibold mb-4" >New Arrival</p>
-      <h3 class="text-sm md:text-6xl font-bold text-[#B88E2F] mb-2">
+      <h3 class="text-sm md:text-4xl font-bold text-[#B88E2F] mb-2">
         Discover Our New Collection
       </h3>
       <p class=" text-[10px] md:text-sm ">

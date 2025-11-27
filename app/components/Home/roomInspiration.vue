@@ -73,22 +73,19 @@
   ‹
 </p>
 
-<!-- Next Button -->
+
 <p
   @click="nextImage"
   class="absolute right-2 top-1/2 -translate-y-1/2 bg-[#B88E2F] text-white rounded-full shadow-md w-10 h-10 flex items-center justify-center cursor-pointer"
 >
   ›
 </p>
-
-
-
         <div class="flex justify-center gap-2 mt-4 space-x-2">
           <span
             v-for="(img, i) in currentCategory.images"
             :key="i"
             @click="goToImage(i)"
-            class="w-3 h-3 p-2  rounded-full cursor-pointer transition border"
+            class="w-3 h-3 p-2 rounded-full cursor-pointer transition"
             :class="activeImageIndex === i ? 'bg-yellow-600' : 'bg-gray-300'"
           ></span>
         </div>

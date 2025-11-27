@@ -13,11 +13,14 @@
     </div>
 
     <div class="flex justify-center mt-10">
-      <button
+      <NuxtLink to="/shop">
+           <p
         class="border border-[#B88E2F] text-[#B88E2F] px-6 py-2 rounded hover:bg-[#B88E2F] hover:text-white transition-colors duration-200"
       >
         Show More
-      </button>
+      </p>
+      </NuxtLink>
+
     </div>
   </section>
 </template>
